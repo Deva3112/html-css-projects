@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    background-image: url("download2.jpeg");
+    background-size:cover;
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    position:relative;
+    font-weight: 900;
+}
+.navbar {
+    border-radius:15px;
+     display:flex;
+     justify-content: space-evenly;
+     border:2px black solid;
+     width:70%;
+     height: 3.5em;
+     margin-top:5%;
+     margin-left: 15%;
+     align-items: center;
+     background-color: black;
+     background: transparent;
+     color: aliceblue;
+     font-family: serif;
+     text-transform: capitalize;
+     animation-name: nav1;
+     animation-duration:2s;
+     animation-fill-mode:forwards;
+}
+@keyframes nav1 {
+    0%{opacity:0}
+    100%{opacity:1}
+}
+     
+.nav-data1{
+    
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+
+   
+
+.nav-data2{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-data3{
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.nav-data4{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.nav-data5{
+    display:flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    
+
+}
+.box{
+    border:1px white fluid;
+    height:3.5rem;
+    width:25%;
+    position: relative;
+    transition-property: background;
+    transition-duration:1s;
+}
+.box:hover{
+    background-color: red;
+    border-radius:15px;
+    border:seashell;
+    
+}
+p{
+    margin-top:50px;
+    padding: 100px;
+    font-size: larger;
+    position:relative;
+    animation-name:d1;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+}
+@keyframes d1 {
+    0%{left:-500px;}
+    100%{left:15px;}
+}
+
+.btn{
+    display:inline-block;
+    position:relative;
+    padding:20px;
+    border:1px white solid;
+    color:white;
+    opacity: 0;
+    text-decoration:none;
+    animation-name:d3;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    transition-property:transform,background;
+    transition-duration: 2s;
+    transition-delay: 0.5s;  
+}
+.btn:hover{
+    transform:rotateY(180deg);
+    background-color:red;
+}
+@keyframes d3 {
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+h2{position: relative;
+    animation-name:d2;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+@keyframes d2{
+    0%{top:-100px;}
+    100%{top:15px;}
+}
